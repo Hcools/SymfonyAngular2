@@ -1,8 +1,8 @@
 {% extends 'NotepadBundle:view:layout.html.twig' %}
 
-{% block title %}Note list{% endblock %}
+{% block title %}Liste des notes{% endblock %}
 
-{% block pageheader %}Note list{% endblock %}
+{% block pageheader %}Liste des notes{% endblock %}
 
 {% block actions %}
 <form class="pull-right" role="search" method="POST">
@@ -24,7 +24,7 @@
 <a href="{{ path('notepadnotenew') }}"
    class="btn btn-lg btn-default">
   <i class="glyphicon glyphicon-plus"></i>
-  Add note
+  Ajouter une note
 </a>
 
 <a href="{{ path('notepadCategorylist') }}"
@@ -43,12 +43,12 @@
           <a href="{{ path('notepadeditnote', {'note': note.id}) }}"
              class="btn btn-sm btn-default">
             <i class="glyphicon glyphicon-pencil"></i>
-            Modify
+            Modifier
           </a>
           <a href="{{ path('notepaddeletenote', {'note': note.id}) }}"
              class="btn btn-sm btn-default">
             <i class="glyphicon glyphicon-trash"></i>
-            Delete
+            Supprimer
           </a>
         </div>
         <span class="h2>">

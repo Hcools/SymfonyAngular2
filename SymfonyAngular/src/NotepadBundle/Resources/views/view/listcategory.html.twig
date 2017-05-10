@@ -3,7 +3,7 @@
 {% block title %}Category list{% endblock %}
 
 {% block pageheader %}
-Category list
+Liste des catégories
   <p>
     {% for flashMessage in app.session.flashbag.get('error') %}
       <div class="alert alert-danger">
@@ -22,12 +22,12 @@ Category list
 <a href="{{ path('notepadcategorynew') }}"
    class="btn btn-lg btn-default">
   <i class="glyphicon glyphicon-plus"></i>
-  Add category
+  Ajouter une catégorie
 </a>
 <a href="{{ path('notepadnotelist') }}"
    class="btn btn-lg btn-default">
    <i class="glyphicon glyphicon-arrow-left"></i>
-  Back
+  Retour
 </a>
 {% endblock %}
 
@@ -42,12 +42,12 @@ Category list
       <a href="{{ path('notepadeditcategory', {'category': category.id}) }}"
          class="btn btn-sm btn-default">
         <i class="glyphicon glyphicon-pencil"></i>
-        Modify
+        Modifier
       </a>
       <a href="{{ path('notepaddeletecategory', {'category': category.id}) }}"
          class="btn btn-sm btn-default">
         <i class="glyphicon glyphicon-trash"></i>
-        Delete
+        Supprimer
       </a>
     </td>
   </tr>
