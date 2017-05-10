@@ -1,0 +1,17 @@
+{% extends 'NotepadBundle:view:layout.html.twig' %}
+
+{% block title %}New Category{% endblock %}
+
+{% block pageheader %}New Category{% endblock %}
+
+{% block actions %}
+<a href="{{ path('notepadCategorylist') }}"
+   class="btn btn-lg btn-default">
+  Retour
+</a>
+{% endblock %}
+
+{% block content %}
+  {{ form_start(form) }}
+  {{ form_end(form) }}
+{% endblock %}

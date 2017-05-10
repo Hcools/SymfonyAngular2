@@ -1,0 +1,25 @@
+{% extends 'NotepadBundle:view:layout.html.twig' %}
+
+{% block title %}New Note{% endblock %}
+
+{% block pageheader %}New Note{% endblock %}
+
+{% block actions %}
+  <button role="button" id="tag" class="btn btn-lg btn-default">
+    <i class="glyphicon glyphicon-plus"></i>
+    Add tag
+  </button>
+  <a href="{{ path('notepadnotelist') }}"
+     class="btn btn-lg btn-default">
+      <i class="glyphicon glyphicon-arrow-left"></i>
+    Back
+  </a>
+{% endblock %}
+
+{% block content %}
+
+{{ form_start(form) }}
+  {{ form_widget(form) }}
+{{ form_end(form) }}
+
+{% endblock %}
